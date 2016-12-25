@@ -68,10 +68,10 @@ int init()
             map[row][col] = ALIVE;
             col++;
       }
-
+		row++;
       }
     
-    row++;
+    
   }
 
   return 0;
