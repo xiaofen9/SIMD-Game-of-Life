@@ -57,7 +57,7 @@ int init()
   while(!in.eof()) 
   { 
     getline(in,line);
-
+    col=0;
     for(int i = 0 ;i < line.length() ; i++) {
       if(line[i]=='0'){
             map[row][col] = DEAD;
@@ -68,9 +68,9 @@ int init()
             map[row][col] = ALIVE;
             col++;
       }
-		row++;
       }
-    
+
+    row++;
     
   }
 
