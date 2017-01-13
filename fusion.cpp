@@ -10,7 +10,7 @@ using namespace std;
 #define MAXCOL 100
 #define DEAD 0
 #define ALIVE 1
-#define SUMTIME 2
+#define SUMTIME 500000
 
 float map[MAXROW][MAXCOL],newmap[MAXROW][MAXCOL],simdmap[MAXROW][MAXCOL],neighborTable[MAXROW][MAXCOL];
 int init();
@@ -85,7 +85,7 @@ void evolutionSIMD(){
 
   while (iterateTime<SUMTIME)
   {
-    //outputMap();
+    outputMap();
     calSIMD();
     for (row = 0; row < MAXROW; row++)
     {
